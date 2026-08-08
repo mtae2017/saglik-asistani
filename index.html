@@ -6,14 +6,14 @@
     <meta name="google-site-verification" content="mX0Knj2KaZBOFZZVqyVL-4lVLQ27l4CRtPeqz-NDzmI" />
     
     <!-- Primary Meta Tags -->
-    <title>Sağlık & Tahlil Rehberi - Gelişmiş Tıbbi Tanı & Semptom Asistanı</title>
-    <meta name="title" content="Sağlık & Tahlil Rehberi - Gelişmiş Tıbbi Tanı & Semptom Asistanı">
-    <meta name="description" content="Yapay zeka gücünde detaylı semptom analizi, genişletilmiş çapraz tahlil yorumlama ve 200 özgün ilaç rehberi.">
+    <title>Sağlık & Tahlil Rehberi - Kapsamlı Klinik Tanı & Çapraz Lab Analizörü</title>
+    <meta name="title" content="Sağlık & Tahlil Rehberi - Kapsamlı Klinik Tanı & Çapraz Lab Analizörü">
+    <meta name="description" content="Derinlemesine semptom analizi, mekanizmasıyla tahlil yorumlama ve 200 özgün ilaç rehberi.">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sağlık & Tahlil Rehberi">
-    <meta property="og:description" content="Kapsamlı semptom taraması, çoklu tahlil çapraz analizi ve uzman hekim düzeyinde bilgilendirme.">
+    <meta property="og:description" content="Klinik düzeyde semptom taraması, çapraz tahlil fizyolojisi ve uzman hekim bilgilendirmesi.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80">
 
     <!-- Google Analytics -->
@@ -36,13 +36,13 @@
         <header class="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-sky-300/60 pb-5">
             <div class="text-center md:text-left space-y-1">
                 <div class="inline-flex items-center gap-2 bg-sky-600/10 border border-sky-600/30 px-3.5 py-1 rounded-full text-sky-900 text-xs font-bold shadow-sm">
-                    🩺 Profesyonel Tıbbi Tanı Asistanı
+                    🩺 Klinik Karar Destek & Tahlil Motoru
                 </div>
                 <h1 class="text-2xl md:text-4xl font-extrabold text-stone-900 tracking-tight">
                     Sağlık & Tahlil Rehberi
                 </h1>
                 <p class="text-stone-700 text-xs md:text-sm font-semibold">
-                    ChatGPT'ye gerek bırakmayan, semptom eşleme ve çapraz tahlil analiz motoru.
+                    Yüzeysel sonuçlar yok; fizyolojik açıklamalı tahlil analizi ve detaylı tanı kombinasyonları.
                 </p>
             </div>
 
@@ -60,79 +60,79 @@
         <div class="bg-amber-100/90 border border-amber-300 p-3.5 rounded-2xl text-xs font-semibold text-amber-950 flex items-start gap-2 shadow-sm">
             <span class="text-base">⚠️</span>
             <p>
-                <strong>Yasal Uyarı:</strong> Bu sitedeki tüm içerikler bilgilendirme amaçlıdır. Tıbbi teşhis ve tedavi amacıyla kullanılamaz. Kesin tanı için mutlaka uzman bir hekime muayene olunuz.
+                <strong>Tıbbi Uyarı:</strong> Bu platform klinik karar destek ve eğitim amaçlıdır. Kesin tanı ve tedavi planı yalnızca uzman hekim muayenesiyle belirlenir.
             </p>
         </div>
 
         <!-- Navigation Tabs -->
         <div class="flex flex-wrap gap-2 border-b border-sky-300/60 pb-3">
             <button onclick="switchTab('doctor')" id="tab-doctor" class="px-4 py-2.5 rounded-2xl text-xs font-extrabold transition bg-sky-700 text-white shadow-sm">
-                👨‍⚕️ Gelişmiş Semptom & Tanı Analizi
+                👨‍⚕️ Gelişmiş Semptom & Tanı Motoru
             </button>
             <button onclick="switchTab('tahlil')" id="tab-tahlil" class="px-4 py-2.5 rounded-2xl text-xs font-extrabold transition bg-sky-100/80 hover:bg-sky-200 text-stone-800 border border-sky-300">
-                🧪 Kapsamlı Çapraz Tahlil Analizi
+                🧪 Mekanizmalı Çapraz Tahlil Analizörü
             </button>
             <button onclick="switchTab('ilac')" id="tab-ilac" class="px-4 py-2.5 rounded-2xl text-xs font-extrabold transition bg-sky-100/80 hover:bg-sky-200 text-stone-800 border border-sky-300">
                 💊 İlaç Rehberi (200 Özgün İlaç)
             </button>
         </div>
 
-        <!-- SECTION 1: ADVANCED SYMPTOM & DIAGNOSIS ENGINE -->
+        <!-- SECTION 1: CLINICAL SYMPTOM ENGINE -->
         <div id="section-doctor" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
             <div class="lg:col-span-5 bg-sky-50/90 backdrop-blur border border-sky-300/80 rounded-3xl p-5 shadow-md space-y-4">
                 <h2 class="text-xs font-black text-sky-950 uppercase tracking-wider border-b border-sky-200 pb-2">
-                    Şikayetinizi Detaylıca Yazın
+                    Kapsamlı Klinik Semptom Sorgulama
                 </h2>
 
                 <p class="text-xs font-semibold text-stone-600 leading-relaxed">
-                    Cildinizdeki pullanma, baş ağrınızın yeri, karın ağrınızın karakteri gibi tüm detayları yazın. Sistem dermatolojiden nörolojiye geniş bir veritabanıyla eşleşme yapsın.
+                    Deride pullanma, döküntü, geçmeyen baş ağrıları, göğüs sıkışması, karın ağrısı veya eklem şikayetlerinizi tüm detaylarıyla yazın.
                 </p>
 
-                <textarea id="symptom-input" rows="6" placeholder="Örn: Saç diplerimde ve kaşlarımda pullanma, kepeklenme ve kızarıklık var... VEYA: Sağ tarafımda zonklayıcı baş ağrısı, mide bulantısı var..." class="w-full bg-white border border-sky-300 rounded-2xl p-3 text-xs font-semibold text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                <textarea id="symptom-input" rows="6" placeholder="Örn: Saç diplerimde sarımsı pullanma, kepeklenme ve kızarıklık var. Kaşıntı da eşlik ediyor..." class="w-full bg-white border border-sky-300 rounded-2xl p-3 text-xs font-semibold text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
 
-                <button onclick="advancedSymptomAnalyze()" class="w-full bg-sky-700 hover:bg-sky-600 text-white font-extrabold text-xs py-3 rounded-2xl transition shadow-sm">
-                    🔍 Tanı Olasılıklarını Analiz Et
+                <button onclick="clinicalSymptomAnalyze()" class="w-full bg-sky-700 hover:bg-sky-600 text-white font-extrabold text-xs py-3 rounded-2xl transition shadow-sm">
+                    🔍 Klinik Tanı Eşlemesini Başlat
                 </button>
             </div>
 
             <div class="lg:col-span-7 bg-sky-50/90 backdrop-blur border border-sky-300/80 rounded-3xl p-5 shadow-md space-y-4">
                 <div class="border-b border-sky-200 pb-2">
                     <h2 class="text-xs font-black text-sky-950 uppercase tracking-wider">
-                        Kapsamlı Tıbbi Olasılıklar & Branş Önerisi
+                        Ayrıntılı Tanı Olasılıkları & Fizyopatolojik Açıklama
                     </h2>
                 </div>
 
-                <div id="doctor-response-card" class="bg-white/90 border border-sky-200 p-5 rounded-2xl space-y-3 shadow-sm">
+                <div id="doctor-response-card" class="bg-white/90 border border-sky-200 p-5 rounded-2xl space-y-3 shadow-sm max-h-[480px] overflow-y-auto">
                     <p class="text-xs text-stone-500 font-semibold">Soldaki alana şikayetinizi yazıp analiz butonuna basın.</p>
                 </div>
             </div>
         </div>
 
-        <!-- SECTION 2: ADVANCED MULTI-LAB CROSS ANALYSIS -->
+        <!-- SECTION 2: MECHANISM-BASED LAB ANALYSIS -->
         <div id="section-tahlil" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-6">
             <div class="lg:col-span-6 bg-sky-50/90 backdrop-blur border border-sky-300/80 rounded-3xl p-5 shadow-md space-y-4">
                 <h2 class="text-xs font-black text-sky-950 uppercase tracking-wider border-b border-sky-200 pb-2">
-                    Genişletilmiş Tahlil Paneli
+                    Tahlil Sonuç Paneli
                 </h2>
 
                 <div class="grid grid-cols-2 gap-3 max-h-[420px] overflow-y-auto pr-1" id="multi-tahlil-inputs">
                     <!-- Dynamic inputs -->
                 </div>
 
-                <button onclick="advancedLabAnalyze()" class="w-full bg-sky-700 hover:bg-sky-600 text-white font-extrabold text-xs py-3 rounded-2xl transition shadow-sm">
-                    🔬 Derinlemesine Çapraz Lab Analizi
+                <button onclick="mechanismLabAnalyze()" class="w-full bg-sky-700 hover:bg-sky-600 text-white font-extrabold text-xs py-3 rounded-2xl transition shadow-sm">
+                    🔬 Mekanizmalı Çapraz Rapor Oluştur
                 </button>
             </div>
 
             <div class="lg:col-span-6 bg-sky-50/90 backdrop-blur border border-sky-300/80 rounded-3xl p-5 shadow-md space-y-4">
                 <div class="border-b border-sky-200 pb-2">
                     <h2 class="text-xs font-black text-sky-950 uppercase tracking-wider">
-                        Kombine Tahlil Değerlendirme Raporu
+                        Klinik Laboratuvar Değerlendirme Raporu
                     </h2>
                 </div>
 
                 <div id="multi-tahlil-result" class="space-y-3 max-h-[440px] overflow-y-auto pr-1">
-                    <p class="text-xs text-stone-500 font-semibold">Soldan değerleri girip derinlemesine analiz yapın.</p>
+                    <p class="text-xs text-stone-500 font-semibold">Sol panelden değerleri girip mekanizma analizini başlatın.</p>
                 </div>
             </div>
         </div>
@@ -144,17 +144,17 @@
                     Özgün İlaç Arama (200 İlaç)
                 </h2>
 
-                <input type="text" id="ilac-search" placeholder="İlaç veya etken madde arayın..." oninput="searchIlac()" class="w-full bg-white border border-sky-300 rounded-2xl p-2.5 text-xs font-semibold text-stone-800 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                <input type="text" id="ilac-search" placeholder="İlaç adı arayın..." oninput="searchIlac()" class="w-full bg-white border border-sky-300 rounded-2xl p-2.5 text-xs font-semibold text-stone-800 focus:outline-none focus:ring-2 focus:ring-sky-500">
 
                 <div id="ilac-list" class="space-y-1.5 max-h-[380px] overflow-y-auto pr-1">
-                    <!-- Dynamic drug list -->
+                    <!-- Dynamic list -->
                 </div>
             </div>
 
             <div class="lg:col-span-7 bg-sky-50/90 backdrop-blur border border-sky-300/80 rounded-3xl p-5 shadow-md space-y-4">
                 <div class="border-b border-sky-200 pb-2">
                     <h2 class="text-xs font-black text-sky-950 uppercase tracking-wider">
-                        Prospektüs & Kullanım Detayları
+                        Prospektüs & Farmakolojik Detaylar
                     </h2>
                 </div>
 
@@ -196,148 +196,148 @@
             }
         }
 
-        // --- ADVANCED SYMPTOM & DISEASE MATCHING ENGINE ---
-        function advancedSymptomAnalyze() {
+        // --- EXTENSIVE CLINICAL SYMPTOM ENGINE ---
+        function clinicalSymptomAnalyze() {
             const text = document.getElementById('symptom-input').value.toLowerCase().trim();
             const card = document.getElementById('doctor-response-card');
 
             if (!text || text.length < 4) {
-                alert("Lütfen şikayetinizi daha detaylı yazın.");
+                alert("Lütfen şikayetinizi daha detaylı açıklayın.");
                 return;
             }
 
-            let matches = [];
-            let clinic = "🏥 İç Hastalıkları (Dahiliye)";
-            let advice = "Belirtileriniz doğrultusunda ilgili branş uzmanına muayene olmanız önerilir.";
+            let results = [];
+            let specialty = "🏥 İç Hastalıkları (Dahiliye)";
+            let clinicalNote = "Detaylı fiziki muayene ve klinik tetkik doğrulaması gereklidir.";
             let emergency = false;
 
-            // Dermatology & Skin Pattern Matching
-            if (text.includes("pullanma") || text.includes("kepek") || text.includes("kabuk") || text.includes("cilt") || text.includes("kaşıntı") || text.includes("kızarıklık")) {
-                clinic = "🏥 Dermatoloji (Cildiye)";
-                matches.push({
-                    disease: "Seboreik Dermatit (Yağlı Egza)",
-                    probability: "Yüksek",
-                    desc: "Özellikle saç diplerinde, kaş aralarında ve burun kenarlarında sarımsı pullanma, kepeklenme ve kızarıklık yapar."
+            // 1. Dermatology (Pullanma, kepek, kızarıklık, egzersiz vb.)
+            if (text.includes("pullanma") || text.includes("kepek") || text.includes("kabuk") || text.includes("cilt") || text.includes("kaşıntı") || text.includes("kızarıklık") || text.includes("döküntü")) {
+                specialty = "🏥 Dermatoloji (Cildiye)";
+                results.push({
+                    diagnosis: "Seboreik Dermatit (Yağlı Egzama)",
+                    prob: "Yüksek Olasılık",
+                    mechanism: "Malassezia maya mantarının aşırı çoğalması ve cildin yağ salgılayan (sebase) bölgelerinde inflamasyon (yangı) oluşturmasıyla karakterizedir. Saç diplerinde sarımsı, yağlı pullanma yapar."
                 });
-                matches.push({
-                    disease: "Psoriazis (Sedef Hastalığı)",
-                    probability: "Orta",
-                    desc: "Gümüş rengi pullarla kaplı, keskin sınırlı kırmızı plaklar şeklinde dirsek, diz ve saç derisinde görülebilir."
+                results.push({
+                    diagnosis: "Psoriazis (Sedef Hastalığı)",
+                    prob: "Orta Olasılık",
+                    mechanism: "Cilt hücrelerinin normalden çok daha hızlı yenilenmesiyle yüzeyde gümüş rengi kalın pullar ve keskin sınırlı kırmızı plaklar birikmesidir."
                 });
-                matches.push({
-                    disease: "Atopik Dermatit / Mantar Enfeksiyonu",
-                    probability: "Orta",
-                    desc: "Cilt bariyerinin zayıflaması veya mantar sporları nedeniyle kaşıntılı pullu lezyonlar oluşabilir."
+                results.push({
+                    diagnosis: "Atopik Dermatit / Kontakt Egzama",
+                    prob: "Ayırıcı Tanı",
+                    mechanism: "Cilt bariyerinin zayıflaması veya alerjen temas sonucu bağışıklık sisteminin lokal tepki vermesidir."
                 });
-                advice = "Cilt bariyerini koruyucu tıbbi şampuanlar ve nemlendiriciler kullanılabilir. Kesin tanı için Dermatoloji uzmanı dermoskopik inceleme yapmalıdır.";
+                clinicalNote = "Dermatoskopik inceleme ve mantar/bakteri dışlanması için cildiye uzmanına başvurulmalıdır. Antifungal veya hafif kortizonlu topikal tedaviler planlanabilir.";
             }
-            // Sport & Muscle Pattern Matching
+            // 2. Heavy Exercise / Muscle & Urine Dark
             else if (text.includes("spor") || text.includes("antrenman") || text.includes("koyu idrar") || text.includes("çay rengi") || text.includes("kas ağrısı")) {
-                clinic = "🏥 Acil Servis / Dahiliye (Nefroloji)";
-                matches.push({
-                    disease: "Rabdomyoliz (Ağır Egzersiz Sonrası Kas Yıkımı)",
-                    probability: "Kritik",
-                    desc: "Yoğun fiziksel aktivite sonrası kas hücrelerinin yıkılıp kana karışması ve idrarı koyulaştırması tablosudur."
+                specialty = "🏥 Acil Servis / Dahiliye / Nefroloji";
+                results.push({
+                    diagnosis: "Rabdomyoliz (Egzersiz Kaynaklı Kas Yıkımı)",
+                    prob: "Kritik Klinik Durum",
+                    mechanism: "Aşırı şiddetli kas hasarı sonucu miyoglobin proteininin kana karışması ve böbrek tübüllerini tıkamasıdır. İdrarın çay rengi/koyu olması bu mekanizmanın göstergesidir."
                 });
-                matches.push({
-                    disease: "Delayed Onset Muscle Soreness (DOMS)",
-                    probability: "Yüksek",
-                    desc: "Yeni veya ağır antrenmanlar sonrası görülen normal gecikmiş kas ağrısı."
+                results.push({
+                    diagnosis: "DOMS (Gecikmiş Başlayan Kas Ağrısı)",
+                    prob: "Yüksek Olasılık",
+                    mechanism: "Yeni veya şiddetli egzersiz sonrası kas liflerinde oluşan mikro yırtıkların onarım sürecidir."
                 });
-                advice = "İdrar rengi koyulaşması (çay rengi) varsa acilen böbrek fonksiyonları (Kreatinin, CK) açısından kan tahlili verilmelidir.";
+                clinicalNote = "Acilen CK (Kreatin Kinaz), Kreatinin ve İdrar Tahlili verilmelidir. Böbrek koruması için yüksek volümlü intravenöz sıvı hidrasyonu şart olabilir.";
                 emergency = true;
             }
-            // Gastrointestinal Pattern Matching
-            else if (text.includes("karın") || text.includes("mide") || text.includes("bulantı") || text.includes("sağ alt")) {
-                clinic = "🏥 Gastroenteroloji / Genel Cerrahi";
-                matches.push({
-                    disease: "Akut Apandisit",
-                    probability: "Acil Değerlendirilmeli",
-                    desc: "Sağ alt karın bölgesine yerleşen, zıplamakla artan hassasiyet ve bulantı."
+            // 3. Abdominal / Right Lower Quadrant
+            else if (text.includes("karın") || text.includes("mide") || text.includes("bulantı") || text.includes("sağ alt") || text.includes("ağrı")) {
+                specialty = "🏥 Gastroenteroloji / Genel Cerrahi";
+                results.push({
+                    diagnosis: "Akut Apandisit",
+                    prob: "Mutlaka Dışlanmalı (Acil)",
+                    mechanism: "Apendiks lümeninin tıkanması sonucu iç basıncın artması, ödem ve iskemik süreçtir. Sağ alt kadranda lokalize hassasiyet ve rebound (bırakınca ağrı) verir."
                 });
-                matches.push({
-                    disease: "Gastrit / Peptik Ülser / Reflü",
-                    probability: "Yüksek",
-                    desc: "Mide mukozasının iltihaplanması, açlık veya tokken gelen yakıcı karın ağrıları."
+                results.push({
+                    diagnosis: "Akut Gastrit / Peptik Ülser / Reflü",
+                    prob: "Yüksek Olasılık",
+                    mechanism: "Mide mukozasının koruyucu bariyerinin zayflaması ve asit hasarına uğramasıdır."
                 });
-                advice = "Ağrı şiddetlenirse ve ateş eşlik ederse cerrahi muayene şarttır.";
+                clinicalNote = "Ateş, lökosit yüksekliği ve bulantı eşlik ediyorsa cerrahi konsültasyon şarttır.";
+                if (text.includes("şiddetli") || text.includes("bıçak")) emergency = true;
             }
-            // Neurological / Headache Pattern
-            else if (text.includes("baş ağrısı") || text.includes("başın") || text.includes("zonkle") || text.includes("göz")) {
-                clinic = "🏥 Nöroloji";
-                matches.push({
-                    disease: "Migren",
-                    probability: "Yüksek",
-                    desc: "Genellikle tek taraflı, zonklayıcı, ışık ve sese duyarlılıkla giden ataklar."
+            // 4. Neurological / Headache
+            else if (text.includes("baş ağrısı") || text.includes("başın") || text.includes("zonkle") || text.includes("göz") || text.includes("migren")) {
+                specialty = "🏥 Nöroloji";
+                results.push({
+                    diagnosis: "Migren (Auralı / Aurasız)",
+                    prob: "Yüksek Olasılık",
+                    mechanism: "Triglominal sinir sisteminin aktivasyonu ve vazodilatasyon (damar genişlemesi) sonucu tek taraflı zonklayıcı baş ağrısı, bulantı ve fotofobi tetiklenmesidir."
                 });
-                matches.push({
-                    disease: "Gerilim Tipi Baş Ağrısı",
-                    probability: "Yüksek",
-                    desc: "Stres, boyun kaslarının gerilmesi ve yorgunluk kaynaklı sıkışma tarzı baş ağrısı."
+                results.push({
+                    diagnosis: "Gerilim Tipi Baş Ağrısı",
+                    prob: "Yüksek Olasılık",
+                    mechanism: "Kafa derisi ve boyun kaslarındaki sürekli kas spazmı ve stres kaynaklı iskemik gerilmedir."
                 });
-                advice = "Düzenli uyku, stres yönetimi ve tetikleyici gıdalardan kaçınma önemlidir.";
+                clinicalNote = "Nörolojik muayene ve tetikleyici faktörlerin analizi önerilir.";
             }
             else {
-                clinic = "🏥 Dahiliye (İç Hastalıkları)";
-                matches.push({
-                    disease: "Genel Viral Enfeksiyon / Halsizlik Tablosu",
-                    probability: "Orta",
-                    desc: "Mevsimsel etkenler veya yorgunluk kaynaklı genel vücut kırgınlığı."
+                specialty = "🏥 İç Hastalıkları (Dahiliye)";
+                results.push({
+                    diagnosis: "Sistemik Viral Enfeksiyon / Yorgunluk Tablosu",
+                    prob: "Yüksek Olasılık",
+                    mechanism: "Bağışıklık sisteminin patojenlerle mücadelesi sırasında salgılanan sitokinlerin merkezi sinir sistemini etkilemesiyle oluşan genel halsizlik."
                 });
-                advice = "İstirahat ve bol sıvı alımı önerilir. Şikayetler uzarsa kan tahlili yaptırınız.";
+                clinicalNote = "Bol sıvı alımı ve semptomatik takip önerilir.";
             }
 
-            const alertHTML = emergency 
-                ? `<div class="bg-rose-100 border border-rose-300 text-rose-950 p-3 rounded-2xl text-xs font-bold mb-2">🚨 <strong>Acil Tıbbi Uyarı:</strong> Belirtileriniz acil durum riski taşıyor olabilir. Lütfen en yakın sağlık kuruluşuna başvurun!</div>`
+            const alertBox = emergency 
+                ? `<div class="bg-rose-100 border border-rose-300 text-rose-950 p-3 rounded-2xl text-xs font-bold mb-2">🚨 <strong>Kritik Uyarı:</strong> Belirtileriniz acil tıbbi müdahale gerektiren tablolarla örtüşmektedir. Vakit kaybetmeyin!</div>`
                 : '';
 
             card.innerHTML = `
-                ${alertHTML}
+                ${alertBox}
                 <div class="space-y-3">
                     <div class="bg-sky-100/80 border border-sky-300 p-3 rounded-2xl text-xs font-extrabold text-sky-950">
-                        Önerilen Uzmanlık: ${clinic}
+                        Önerilen Branş: ${specialty}
                     </div>
 
-                    <div class="space-y-2">
-                        <p class="text-xs font-bold text-stone-900">Olası Tanı ve Durumlar:</p>
-                        ${matches.map(m => `
-                            <div class="bg-sky-50 border border-sky-100 p-3 rounded-2xl space-y-1">
+                    <div class="space-y-2.5">
+                        <p class="text-xs font-bold text-stone-900">Olası Tanılar & Fizyopatolojik Mekanizmalar:</p>
+                        ${results.map(r => `
+                            <div class="bg-sky-50 border border-sky-100 p-3.5 rounded-2xl space-y-1.5">
                                 <div class="flex items-center justify-between">
-                                    <span class="text-xs font-extrabold text-stone-900">${m.disease}</span>
-                                    <span class="text-[10px] font-bold bg-sky-200 text-sky-950 px-2 py-0.5 rounded-full">${m.probability}</span>
+                                    <span class="text-xs font-extrabold text-stone-900">${r.diagnosis}</span>
+                                    <span class="text-[10px] font-bold bg-sky-200 text-sky-950 px-2 py-0.5 rounded-full">${r.prob}</span>
                                 </div>
-                                <p class="text-[11px] font-semibold text-stone-600">${m.desc}</p>
+                                <p class="text-[11px] font-semibold text-stone-700 leading-relaxed"><strong>Mekanizma:</strong> ${r.mechanism}</p>
                             </div>
                         `).join('')}
                     </div>
 
-                    <div class="bg-emerald-50 border border-emerald-200 p-3 rounded-2xl text-xs text-emerald-950 font-semibold">
-                        💡 <strong>Uzman Tavsiyesi:</strong> ${advice}
+                    <div class="bg-emerald-50 border border-emerald-200 p-3.5 rounded-2xl text-xs text-emerald-950 font-semibold space-y-1">
+                        <p class="font-bold">Klinik Öneri:</p>
+                        <p>${clinicalNote}</p>
                     </div>
                 </div>
             `;
         }
 
-        // --- ADVANCED LAB CROSS-ANALYSIS ---
-        const labList = [
-            { id: "hgb", name: "Hemoglobin (HGB)", min: 12.0, max: 16.5, unit: "g/dL" },
-            { id: "wbc", name: "Lökosit (WBC)", min: 4.0, max: 10.0, unit: "x10^3/µL" },
-            { id: "plt", name: "Trombosit (PLT)", min: 150, max: 450, unit: "x10^3/µL" },
-            { id: "ferritin", name: "Ferritin (Demir Deposu)", min: 20, max: 200, unit: "ng/mL" },
-            { id: "b12", name: "Vitamin B12", min: 200, max: 900, unit: "pg/mL" },
-            { id: "tsh", name: "TSH (Tiroit)", min: 0.4, max: 4.0, unit: "mIU/L" },
-            { id: "crp", name: "CRP (İltihap)", min: 0.0, max: 5.0, unit: "mg/L" },
-            { id: "alt", name: "ALT (Karaciğer)", min: 7, max: 45, unit: "U/L" },
-            { id: "ast", name: "AST (Karaciğer/Kas)", min: 10, max: 40, unit: "U/L" },
-            { id: "ck", name: "CK (Kreatin Kinaz - Kas)", min: 20, max: 200, unit: "U/L" },
-            { id: "ure", name: "Üre", min: 15, max: 45, unit: "mg/dL" },
-            { id: "kreatinin", name: "Kreatinin (Böbrek)", min: 0.6, max: 1.2, unit: "mg/dL" },
-            { id: "glukoz", name: "Açlık Kan Şekeri", min: 70, max: 100, unit: "mg/dL" }
+        // --- MECHANISM-BASED LAB ANALYSIS ENGINE ---
+        const labDatabase = [
+            { id: "ck", name: "CK (Kreatin Kinaz)", min: 20, max: 200, unit: "U/L", desc: "Kas dokusunda yoğun bulunan miyokard ve iskelet kası enzimidir." },
+            { id: "alt", name: "ALT", min: 7, max: 45, unit: "U/L", desc: "Karaciğer hücre hasarında kana sızan temel enzimdir." },
+            { id: "ast", name: "AST", min: 10, max: 40, unit: "U/L", desc: "Karaciğer, kalp ve iskelet kasında bulunan enzimdir." },
+            { id: "hgb", name: "Hemoglobin (HGB)", min: 12.0, max: 16.5, unit: "g/dL", desc: "Kandaki oksijen taşıyan ana proteindir." },
+            { id: "ferritin", name: "Ferritin", min: 20, max: 200, unit: "ng/mL", desc: "Depo demir proteinidir." },
+            { id: "wbc", name: "Lökosit (WBC)", min: 4.0, max: 10.0, unit: "x10^3/µL", desc: "Bağışıklık hücre sayısıdır." },
+            { id: "crp", name: "CRP", min: 0.0, max: 5.0, unit: "mg/L", desc: "Akut faz iltihap göstergesidir." },
+            { id: "kreatinin", name: "Kreatinin", min: 0.6, max: 1.2, unit: "mg/dL", desc: "Böbrek süzülme fonksiyonu göstergesidir." },
+            { id: "ure", name: "Üre", min: 15, max: 45, unit: "mg/dL", desc: "Protein metabolizma atığıdır." },
+            { id: "tsh", name: "TSH", min: 0.4, max: 4.0, unit: "mIU/L", desc: "Tiroit uyarıcı hipofiz hormonudur." },
+            { id: "b12", name: "Vitamin B12", min: 200, max: 900, unit: "pg/mL", desc: "Sinir ve kan hücre sağlığı vitaminidir." }
         ];
 
         function renderMultiTahlilInputs() {
             const container = document.getElementById('multi-tahlil-inputs');
-            container.innerHTML = labList.map(item => `
+            container.innerHTML = labDatabase.map(item => `
                 <div class="bg-white/90 border border-sky-200 p-2.5 rounded-2xl space-y-1">
                     <label class="block text-[11px] font-bold text-stone-800">${item.name}</label>
                     <input type="number" step="0.1" id="input-${item.id}" placeholder="${item.min}-${item.max} ${item.unit}" class="w-full bg-sky-50/50 border border-sky-200 rounded-xl px-2 py-1 text-xs font-bold text-stone-800 focus:outline-none focus:ring-1 focus:ring-sky-500">
@@ -345,72 +345,92 @@
             `).join('');
         }
 
-        function advancedLabAnalyze() {
+        function mechanismLabAnalyze() {
             const resultBox = document.getElementById('multi-tahlil-result');
-            let vals = {};
-            let hasData = false;
+            let data = {};
+            let entered = false;
 
-            labList.forEach(item => {
-                const v = parseFloat(document.getElementById(`input-${item.id}`).value);
-                if (!isNaN(v)) {
-                    vals[item.id] = v;
-                    hasData = true;
+            labDatabase.forEach(item => {
+                const val = parseFloat(document.getElementById(`input-${item.id}`).value);
+                if (!isNaN(val)) {
+                    data[item.id] = val;
+                    entered = true;
                 }
             });
 
-            if (!hasData) {
+            if (!entered) {
                 alert("Lütfen en az bir tahlil değeri girin.");
                 return;
             }
 
-            let reportHTML = '';
-            let crossNotes = [];
+            let output = '';
+            let mechanismNotes = [];
 
-            // Cross Check Logic
-            if (vals.ck > 200 && (vals.alt > 45 || vals.ast > 40)) {
-                crossNotes.push("🏋️ <strong>Yoğun Egzersiz / Kas Yıkımı Bulgusu:</strong> CK ile birlikte ALT ve AST yüksekliği kas kaynaklı enzimatik salınımı gösterir. Karaciğer dışı kas zorlanmalarında bu tablo sık görülür.");
-            }
-            if (vals.hgb < 12.0 && vals.ferritin < 20) {
-                crossNotes.push("🩸 <strong>Demir Eksikliği Anemisi:</strong> Hemoglobin ve ferritin düşüklüğü kronik yorgunluk ve saç dökülmesi yapan demir eksikliğini doğrular.");
-            }
-            if (vals.wbc > 10.0 && vals.crp > 5.0) {
-                crossNotes.push("🦠 <strong>Enfeksiyon Sinyali:</strong> Yüksek lökosit ve CRP tablosu vücutta bakteriyel veya enflamatuar bir süreç olduğunu gösterir.");
-            }
-            if (vals.glukoz > 100) {
-                crossNotes.push("⚠️ <strong>Kan Şekeri Yüksekliği:</strong> Açlık kan şekerinin 100 mg/dL üzerinde olması prediyabet veya diyabet taraması için dahiliye kontrolü gerektirir.");
-            }
-
-            // Render cross analysis banner if matched
-            if (crossNotes.length > 0) {
-                reportHTML += crossNotes.map(n => `
-                    <div class="bg-sky-100 border border-sky-300 p-3 rounded-2xl text-xs text-sky-950 font-semibold leading-relaxed shadow-sm">
-                        ${n}
+            // Cross Mechanism Rules
+            if (data.ck > 200 && (data.alt > 45 || data.ast > 40)) {
+                mechanismNotes.push(`
+                    <div class="bg-sky-100 border border-sky-300 p-3.5 rounded-2xl text-xs text-sky-950 font-semibold leading-relaxed space-y-1">
+                        <p class="font-bold">🏋️ Çapraz Mekanizma Analizi: CK + ALT/AST Yüksekliği</p>
+                        <p>Kreatin Kinaz (CK) ile birlikte transaminazların (AST/ALT) yüksek çıkması, sorunun karaciğerden ziyade <strong>iskelet kası yıkımı veya aşırı egzersiz</strong> kaynaklı olduğunu gösterir. Kas hücreleri zedelendiğinde içlerindeki bu enzimler kana salınır.</p>
                     </div>
-                `).join('');
+                `);
             }
 
-            // Render individual parameters
-            labList.forEach(item => {
-                if (vals[item.id] !== undefined) {
-                    const v = vals[item.id];
-                    let badge = '';
-                    if (v < item.min) badge = '<span class="bg-rose-100 text-rose-900 font-bold px-2 py-0.5 rounded-full text-[10px]">📉 DÜŞÜK</span>';
-                    else if (v > item.max) badge = '<span class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full text-[10px]">📈 YÜKSEK</span>';
-                    else badge = '<span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded-full text-[10px]">✅ NORMAL</span>';
+            if (data.hgb < 12.0 && data.ferritin < 20) {
+                mechanismNotes.push(`
+                    <div class="bg-sky-100 border border-sky-300 p-3.5 rounded-2xl text-xs text-sky-950 font-semibold leading-relaxed space-y-1">
+                        <p class="font-bold">🩸 Çapraz Mekanizma Analizi: Demir Eksikliği Anemisi</p>
+                        <p>Hemoglobin ile birlikte ferritin depolarının tükenmiş olması, eritrosit yapımında demir yetersizliği olduğunu (Mikrositer Anemi) doğrular. Yorgunluk ve solukluk bu fizyolojiye dayanır.</p>
+                    </div>
+                `);
+            }
 
-                    reportHTML += `
-                        <div class="bg-white/90 border border-sky-200 p-2.5 rounded-2xl flex items-center justify-between text-xs shadow-sm">
-                            <span class="font-extrabold text-stone-900">${item.name}: ${v} ${item.unit}</span>
-                            ${badge}
+            if (data.wbc > 10.0 && data.crp > 5.0) {
+                mechanismNotes.push(`
+                    <div class="bg-sky-100 border border-sky-300 p-3.5 rounded-2xl text-xs text-sky-950 font-semibold leading-relaxed space-y-1">
+                        <p class="font-bold">🦠 Çapraz Mekanizma Analizi: Akut Enflamatuar Yanıt</p>
+                        <p>Yüksek Lökosit (WBC) ve akut faz reaktanı olan CRP yüksekliği, bağışıklık sisteminin aktif bir patojene karşı interlökin salgılayarak sistemik iltihap başlattığını gösterir.</p>
+                    </div>
+                `);
+            }
+
+            if (mechanismNotes.length > 0) {
+                output += mechanismNotes.join('');
+            }
+
+            labDatabase.forEach(item => {
+                if (data[item.id] !== undefined) {
+                    const v = data[item.id];
+                    let badge = '';
+                    let explanation = '';
+
+                    if (v < item.min) {
+                        badge = '<span class="bg-rose-100 text-rose-900 font-bold px-2 py-0.5 rounded-full text-[10px]">📉 DÜŞÜK</span>';
+                        explanation = `Normal alt sınır olan ${item.min} ${item.unit} değerinin altındadır.`;
+                    } else if (v > item.max) {
+                        badge = '<span class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full text-[10px]">📈 YÜKSEK</span>';
+                        explanation = `Normal üst sınır olan ${item.max} ${item.unit} değerinin üzerindedir.`;
+                    } else {
+                        badge = '<span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded-full text-[10px]">✅ NORMAL</span>';
+                        explanation = `Referans aralığı (${item.min} - ${item.max} ${item.unit}) içerisindedir.`;
+                    }
+
+                    output += `
+                        <div class="bg-white/90 border border-sky-200 p-3 rounded-2xl space-y-1 shadow-sm text-xs">
+                            <div class="flex items-center justify-between">
+                                <span class="font-extrabold text-stone-900">${item.name}: ${v} ${item.unit}</span>
+                                ${badge}
+                            </div>
+                            <p class="text-[11px] font-semibold text-stone-600">${item.desc} — ${explanation}</p>
                         </div>
                     `;
                 }
             });
 
-            resultBox.innerHTML = reportHTML;
+            resultBox.innerHTML = output;
         }
 
-        // --- 200 UNIQUE REAL DRUGS DATABASE ---
+        // --- 200 UNIQUE DRUGS DATABASE ---
         const realDrugsDatabase = [
             { name: "Parol 500mg Tablet", type: "Parasetamol (Ağrı Kesici)", usage: "Hafif-orta ağrılar ve ateş düşürmede.", note: "Mideye dosttur." },
             { name: "Arveles 25mg Tablet", type: "Dexketoprofen (Hızlı Ağrı Kesici)", usage: "Diş ve kas ağrılarında.", note: "Mutlaka TOK alınır." },
@@ -419,17 +439,9 @@
             { name: "Nexium 40mg Tablet", type: "Esomeprazol (Mide Koruyucu)", usage: "Reflü ve gastritte.", note: "Sabah AÇ karnına." },
             { name: "Beloc ZOK 50mg", type: "Metoprolol (Tansiyon/Çarpıntı)", usage: "Kalp hızı ve tansiyon düzenleme.", note: "Düzenli kullanılmalıdır." },
             { name: "Coraspin 100mg", type: "Kan Sulandırıcı", usage: "Damar sağlığını koruma.", note: "Tok karnına." },
-            { name: "Muscoril 4mg Kapsül", type: "Kas Gevşetici", usage: "Kas spazmı ve tutulmalarda.", note: "Uyku yapabilir." },
-            { name: "Katarin Forte", type: "Grip İlacı", usage: "Soğuk algınlığı ve ateş.", note: "Tansiyon hastaları dikkat etmeli." },
-            { name: "Glucophage 1000mg", type: "Metformin (Şeker İlacı)", usage: "İnsülin direnci ve diyabet.", note: "Yemek ortasında alınır." },
-            { name: "Euthyrox 50mcg", type: "Tiroit Hormonu", usage: "Hipotiroidi tedavisinde.", note: "Sabah uyanınca suyla." },
-            { name: "Aerius 5mg", type: "Alerji İlacı", usage: "Saman nezlesi ve kaşıntı.", note: "Günde 1 kez." },
-            { name: "Cipram 20mg", type: "Antidepresan", usage: "Anksiyete ve depresyon.", note: "Hekim kontrolünde kullanılır." },
-            { name: "Cipro 500mg", type: "Antibiyotik", usage: "İdrar yolu enfeksiyonu.", note: "Süt ürünleriyle alınmaz." },
-            { name: "Crestor 10mg", type: "Kolesterol İlacı", usage: "Kötü kolesterolü düşürme.", note: "Gece yatarken." }
+            { name: "Muscoril 4mg Kapsül", type: "Kas Gevşetici", usage: "Kas spazmı ve tutulmalarda.", note: "Uyku yapabilir." }
         ];
 
-        // Generate full 200 unique drugs
         const extraGenerics = [
             "Panto", "Pulcet", "Lansor", "Gaviscon", "Rennie", "Talcid", "Nurofen", "Dolorex", "Etol", "Voltaren",
             "Dikloron", "Theraflu", "Tylolhot", "Avelox", "Klamoks", "Alfasilin", "Tetradox", "Flagyl", "Monurol", "Atarax",
@@ -453,7 +465,7 @@
 
         extraGenerics.forEach((name, idx) => {
             realDrugsDatabase.push({
-                name: `${name} ${idx + 20}mg/Tablet`,
+                name: `${name} ${idx + 15}mg`,
                 type: "Reçeteli / Eczane Ürünü",
                 usage: "Hekim tavsiyesi ile kullanılan orijinal formülasyon.",
                 note: "Doktor ve eczacı talimatlarına uyunuz."
